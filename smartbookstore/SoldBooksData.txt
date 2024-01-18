@@ -1,0 +1,2 @@
+QUEENS,SJ JONES,NonFiction,9.99,2,false
+TotalBill,19.98

@@ -30,10 +30,18 @@ public class UserService implements IUserService {
         String borrowedBooksFilePath = "BorrowedBooksData.txt";
 
         try {
+            // Create or append to the borrowed books data file
+            FileWriter writer = new FileWriter(borrowedBooksFilePath, true);
+
             // Save book information along with borrowing date, user ID, and is returned status
             String line = String.format("%s,%s,%s,%s%n", book.getTitle(),
                     new SimpleDateFormat("yyyy-MM-dd").format(new Date()), userId, isReturned);
-            Files.write(Path.of(borrowedBooksFilePath), line.getBytes(), StandardOpenOption.APPEND);
+
+            // Write the line to the file
+            writer.write(line);
+
+            // Close the writer
+            writer.close();
 
             System.out.println("Book data saved.");
         } catch (IOException ex) {
