@@ -18,3 +18,53 @@ d. Implements ILibraryService interface.
 2. Main Class:
 a. Contains the main method to initiate the program.
 b. nitializes instances of various services and modules.
+
+3.	Pair Class:
+a.	A generic class to represent a pair of values.
+b.	Used to store pairs of strings (e.g., book title and author).
+
+4.	SmartBookstore Class:
+a.	Represents the main application.
+b.	Handles user interactions and menu options.
+c.	Comprises instances of different modules and services.
+d.	Implements Dependency Inversion Principle (DIP).
+
+5.	UserModule Class:
+a.	Manages user-specific functionalities.
+b.	Allows users to browse books, borrow, return, add to cart, and checkout.
+c.	Implements IUserService.
+
+6.	UserService Class:
+a.	Handles user-related operations such as borrowing and returning books.
+b.	Manages the list of borrowed books for a user.
+c.	Implements IUserService and follows Dependency Inversion Principle (DIP).
+
+7.	AdminModule Class:
+a.	Manages admin-specific functionalities.
+b.	Allows admins to perform operations like adding and removing books.
+c.	Implements IAdminService.
+
+8.	AdminService Class:
+a.	Implements admin-related operations.
+b.	Allows admins to add, remove, and manipulate books in the library.
+c.	Implements IAdminService.
+
+9.	BorrowReturnService Class:
+a.	Manages book borrowing and returning processes.
+b.	Implements IBorrowReturnService.
+c.	Follows Dependency Inversion Principle (DIP).
+
+10.	AddToCart Class:
+a.	Handles the addition of books to the cart.
+b.	Implements IAddToCart and interacts with the library service.
+c.	Follows Dependency Inversion Principle (DIP).
+
+11.	GenerateNewUser Class:
+a.	Represents the functionality to generate new library users.
+b.	Implements IGenerateNewUser.
+
+12.	Book Class:
+a.	Represents the structure of a book, including its title, author, genre, price, quantity, and borrowed status.
+b.	Used to create instances of books within the library system. 
+
+
