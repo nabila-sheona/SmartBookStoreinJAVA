@@ -1,4 +1,3 @@
-//import javafx.util.Pair;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -6,12 +5,7 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-
-
 public class Library implements ILibraryService {
-
-    private final List<Pair<String, String>> borrowedBooks = new ArrayList<>();
-
 
     private final List<Book> Books = new ArrayList<>();
     private final List<Book> ShoppingCart = new ArrayList<>();
@@ -21,7 +15,7 @@ public class Library implements ILibraryService {
 
     // Constructor: Load existing book data when initializing the Library
     public Library() {
-        loadBookData();
+       loadBookData();
         loadSoldBooksData();
     }
 
@@ -96,8 +90,6 @@ public class Library implements ILibraryService {
     public List<Book> getAvailableBooks() {
         return Books.stream().filter(book -> book.getQuantity() > 0).collect(Collectors.toList());
     }
-
-
 
     public void loadBookData() {
         try {

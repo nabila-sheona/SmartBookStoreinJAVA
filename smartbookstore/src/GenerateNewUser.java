@@ -14,7 +14,8 @@ public class GenerateNewUser implements IGenerateNewUser {
     private String userId;
 
     public GenerateNewUser() {
-        loadUserInformationFromFile();
+
+        //loadUserInformationFromFile();
     }
 
     @Override

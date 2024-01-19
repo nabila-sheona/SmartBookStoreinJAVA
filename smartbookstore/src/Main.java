@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ILibraryService libraryService =
-                new Library();
+        ILibraryService libraryService = new Library();
         IUserService userService = new UserService(libraryService);
         IAdminService adminService = new AdminService(libraryService);
         ICheckUserId checkUserIdService = new CheckUserID();

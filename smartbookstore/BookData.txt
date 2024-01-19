@@ -1,2 +1,8 @@
-a,a,Fiction,12.00,11,true
-QUEENS,SJ JONES,NonFiction,9.99,10,false
+QUEENS,SJ JONES,NonFiction,9.99,8,false
+Divergent,Veronica Roth,Youngadult,9.99,3,true
+The kite runner,Khaled Hosseini,Fiction,7.99,30,false
+Martains,owells,Scifi,4.59,10,false
+a`s,a,Fiction,1.00,2,false
+1`a,a,Fiction,1.00,1,false
+Harry Potter,JK Rowling,Fantasy,11.49,1,false
+got,owells,Fantasy,12.00,3,false
